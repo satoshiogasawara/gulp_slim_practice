@@ -1,0 +1,58 @@
+doctype html
+html lang="ja"
+  /! include head
+  include head
+  body
+    div.wrapper
+      /! include header
+      include header-worklist
+      /! page ID
+      div.breadcrumb
+        a href="/"
+          | ホーム
+        span
+          | >
+        p
+          | つくったもの
+      div.content-wrapper.cf
+        div.left-content
+          h1
+            | つくったもの
+          div.worklist
+            a.cf href="/worklist/work-01.html"
+              img src="/img/index_03.jpg" alt=""
+              div.worklist-text
+                h2
+                  | バッタになりたい魔法使い
+                p
+                  | コモモ・ひろましゃ制作のWeb仕掛け絵本
+                  br
+                  | 合言葉は、バッタになっちゃえ！
+          div.worklist
+            a.cf href="/worklist/work-02.html"
+              img src="/img/index_02.jpg" alt=""
+              div.worklist-text
+                h2
+                  | Wordpress
+                  br
+                  | デザインワークブック
+                p
+                  | コモモとひろましゃ二人の共著によるWordpressで本格的なウェブサイトを制作したい方向けの書籍
+          div.worklist
+            a.cf href="/worklist/work-03.html"
+              img src="/img/index_01.jpg" alt=""
+              div.worklist-text
+                h2
+                  | Cafe Debut
+                p
+                  | baserCMSのカフェサイト用汎用テーマ
+                  br
+                  | テーマコンテスト2012飲食店系テーマ賞受賞
+
+        /! include side
+        include side-worklist
+      div.totop
+        a href="#"
+          | ページの先頭へ戻る
+      /! include footer
+    include footer

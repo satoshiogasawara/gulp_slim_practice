@@ -1,0 +1,224 @@
+@charset "UTF-8"
+
+/* reset */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+
+body
+  line-height: 0
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul, li
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  text-decoration: none
+
+ins
+  background-color: #ff9
+  color: #000
+  text-decoration: none
+
+mark
+  background-color: #ff9
+  color: #000
+  font-style: italic
+  font-weight: bold
+
+img
+  border: 0
+  vertical-align: top
+
+em
+  font-style: italic
+
+del
+  text-decoration: line-through
+
+abbr[title], dfn[title]
+  border-bottom: 1px dotted
+  cursor: help
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 0
+  padding: 0
+
+input, select, textarea
+  font-family: inherit
+  font-style: inherit
+  font-weight: inherit
+  font-size: 100%
+  margin: 0
+  padding: 0
+  vertical-align: middle
+
+input:focus, textarea:focus, select:focus
+  outline: none
+
+/* html */
+
+html
+  overflow-y: scroll
+
+/* clearfix */
+
+.cf
+  &:before
+    display: table
+    content: ''
+  &:after
+    display: table
+    content: ''
+    clear: both
+  zoom: 1
+
+
+/* body */
+
+body
+  min-width: 1024px
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif
+  font-size: 15px
+  line-height: 1.8
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
+  color: #514c47
+  background-image: url('/img/bg1.png')
+
+/* base link */
+
+a
+  color: #514c47
+  outline: none
+  opacity: 1
+  -webkit-tap-highlight-color: transparent
+  &:link, &:visited
+    text-decoration: none
+  &:hover
+    text-decoration: none
+    outline: none
+    opacity: 0.7
+  &:active
+    outline: none
+
+/* wrapper */
+
+.wrapper
+  width: 980px
+  margin: 20px auto
+
+/* header */
+i.fa-bars, i.fa-times
+  display: none
+
+.header h1
+  font-size: 20px
+
+.menubar .menubar-inner ul
+  border-top: 1px solid #ccc
+  border-bottom: 1px solid #ccc
+  padding: 5px 0
+
+.menubar .menubar-inner ul li
+  display: inline-block
+  padding: 0 10px
+  border-left: 1px solid #ccc
+  a
+    display: block
+    padding: 0 65px
+    margin: 5px 0
+    transition: all .5s linear
+  a.active
+    background-color: #ccc
+  a:hover
+    background-color: #ccc
+
+.menubar .menubar-inner ul li:first-child
+  border-left: none
+
+/* main */
+
+.main .main-img
+  margin: 50px 0
+  position: relative
+  .img-text
+    position: absolute
+    bottom: 50px
+    left: 50px
+    color: #fff
+    background-color: rgba(0, 0, 0, 0.5)
+    padding: 20px
+    h2
+      font-size: 20px
+
+.main-sub
+  display: flex
+  justify-content: space-between
+  .sub
+    width: 300px
+    img
+      margin-bottom: 10px
+    p
+      font-size: 12px
+
+.info h1
+  font-size: 20px
+
+.info table tr, .info table td
+  border: 1px solid #ccc
+
+.info table td
+  padding: 15px
+
+.info table .date
+  width: 15%
+  font-weight: bold
+
+.info table .teble-content
+  width: 85%
+
+.totop
+  text-align: right
+  margin-top: 20px
+  a
+    padding-left: 10px
+    text-decoration: underline
+    background-image: url('/img/ico_pagetop.png')
+    background-repeat: no-repeat
+    background-position: left center

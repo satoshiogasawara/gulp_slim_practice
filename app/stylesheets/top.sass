@@ -1,0 +1,108 @@
+@charset "UTF-8"
+
+@media screen and (max-width: 640px)
+  body
+    min-width: 0
+
+  .wrapper
+    width: 100%
+    margin: 0
+
+  /* header */
+  .header
+    position: fixed
+    background-image: url('/img/bg1.png')
+    z-index: 2
+    h1, p
+      padding: 10px
+    p
+      text-align: justify
+
+  i.fa-bars
+    display: inline-block
+
+  .responsive-button
+    position: fixed
+    top: 10px
+    right: 10px
+
+  .menubar
+    position: fixed
+    top: 56px
+    left: 0
+    width: 100%
+    z-index: 1
+    background-image: url('/img/bg1.png')
+    display: none
+
+  .menubar .menubar-inner ul
+    border-top: none
+    border-bottom: none
+    li
+      border-left: none
+      border-bottom: 1px solid #ccc
+      margin: 0 10px
+      display: block
+      text-align: center
+      &:first-child
+        border-top: 1px solid #ccc
+      a
+        padding: 10px 10px
+      a.active
+        background-color: transparent
+
+  /* main */
+  .main
+    width: 90%
+    margin: 0 auto
+    padding: 156px 0
+
+  .main .main-img
+    margin: 20px 0 40px 0
+    img
+      width: 100%
+      height: auto
+    .img-text
+      position: static
+      margin-top: 20px
+
+  .main-sub
+    display: block
+    margin-top: 20px
+    padding-top: 20px
+    border-top: 1px solid #ccc
+    .sub
+      width: 100%
+      margin-top: 20px
+      img
+        width: 100%
+
+  /* info */
+  .info
+    width: 90%
+    margin: 0 auto
+    table .date
+      width: 30%
+
+  .totop
+    text-align: center
+
+  /* footer */
+  .footer
+    width: 100%
+    .copy
+      width: 90%
+      margin: 0 auto
+      padding: 20px 0
+
+  .footer .footer-nav ul li
+    display: block
+    border: none
+
+  .footer .footer-nav ul li:first-child
+    border: none
+
+  /* breadcrumb */
+  .breadcrumb
+    margin: 0 0 0 10px !important
+    padding-top: 160px
